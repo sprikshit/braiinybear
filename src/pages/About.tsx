@@ -1,6 +1,6 @@
 import React from 'react'
 import bgImage from '../assets/images/IMG-20250319-WA0012.jpg'
-import { ArrowRight, BookOpen, Eye, Target, Award, Heart, Lightbulb, BarChart3, Users, Globe, Handshake } from 'lucide-react';
+import {  Target, Award, Heart, Lightbulb } from 'lucide-react';
 
 
 const About: React.FC = () => {
