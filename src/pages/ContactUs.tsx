@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = (data:any) => {
     console.log(data);
     // Here you would typically send the data to your backend
     setIsSubmitted(true);
@@ -20,14 +20,14 @@ const Contact: React.FC = () => {
     <div className="pb-16 bg-gray-100">
       {/* Page Header */}
       <div className="relative bg-black-600 text-white h-96 flex items-center justify-center mb-12">
-  <div className="absolute inset-0 bg-yellow-500 opacity-10"></div>
-  <div className="container mx-auto px-6 text-center text-black relative z-10 mt-29 ">
-    <h1 className="text-4xl md:text-5xl font-bold mb-4 ">Contact Us</h1>
-    <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90">
-      We'd love to hear from you. Get in touch with our team for any inquiries or collaborations.
-    </p>
-  </div>
-</div>
+        <div className="absolute inset-0 bg-yellow-500 opacity-10"></div>
+        <div className="container mx-auto px-6 text-center text-black relative z-10 mt-29 ">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 ">Contact Us</h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90">
+            We'd love to hear from you. Get in touch with our team for any inquiries or collaborations.
+          </p>
+        </div>
+      </div>
 
 
       <div className="container mx-auto px-6">
@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
           <div className="lg:col-span-1">
             <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
               <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact Information</h2>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-yellow-500 p-3 rounded-full mr-4">
@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
                     <p className="text-gray-600 mt-1">123 Creative St, Design District, City, 10001</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="bg-yellow-500 p-3 rounded-full mr-4">
                     <Phone className="h-5 w-5 text-white" />
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
                     <p className="text-gray-600 mt-1">+1 (555) 123-4567</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="bg-yellow-500 p-3 rounded-full mr-4">
                     <Mail className="h-5 w-5 text-white" />
@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
                     <p className="text-gray-600 mt-1">info@yourcompany.com</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="bg-yellow-500 p-3 rounded-full mr-4">
                     <Clock className="h-5 w-5 text-white" />
@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-8">
                 <h3 className="text-xl font-medium mb-4 text-gray-800">Follow Us</h3>
                 <div className="flex space-x-4">
@@ -107,12 +107,12 @@ const Contact: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
               <h2 className="text-2xl font-bold mb-6 text-gray-800">Send Us A Message</h2>
-              
+
               {isSubmitted ? (
                 <div className="flex flex-col items-center justify-center py-12 text-center">
                   <div className="bg-green-100 p-3 rounded-full mb-4">
@@ -137,9 +137,9 @@ const Contact: React.FC = () => {
                         className={`w-full px-4 py-3 rounded-md border ${errors.name ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-yellow-500`}
                         placeholder="John Doe"
                       />
-                      {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>}
+                      {errors.name && <p className="mt-1 text-sm text-red-600">{String(errors.name.message)}</p>}
                     </div>
-                    
+
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                         Email Address
@@ -147,7 +147,7 @@ const Contact: React.FC = () => {
                       <input
                         type="email"
                         id="email"
-                        {...register("email", { 
+                        {...register("email", {
                           required: "Email is required",
                           pattern: {
                             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -157,10 +157,10 @@ const Contact: React.FC = () => {
                         className={`w-full px-4 py-3 rounded-md border ${errors.email ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-yellow-500`}
                         placeholder="john@example.com"
                       />
-                      {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>}
+                      {errors.email && <p className="mt-1 text-sm text-red-600">{String(errors.email.message)}</p>}
                     </div>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
                       Subject
@@ -172,9 +172,9 @@ const Contact: React.FC = () => {
                       className={`w-full px-4 py-3 rounded-md border ${errors.subject ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-yellow-500`}
                       placeholder="How can we help you?"
                     />
-                    {errors.subject && <p className="mt-1 text-sm text-red-600">{errors.subject.message}</p>}
+                    {errors.subject && <p className="mt-1 text-sm text-red-600">{String(errors.subject.message)}</p>}
                   </div>
-                  
+
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                       Message
@@ -186,9 +186,9 @@ const Contact: React.FC = () => {
                       className={`w-full px-4 py-3 rounded-md border ${errors.message ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-yellow-500`}
                       placeholder="Your message here..."
                     ></textarea>
-                    {errors.message && <p className="mt-1 text-sm text-red-600">{errors.message.message}</p>}
+                    {errors.message && <p className="mt-1 text-sm text-red-600">{String(errors.message.message)}</p>}
                   </div>
-                  
+
                   <div className="flex items-center">
                     <input
                       type="checkbox"
@@ -200,8 +200,8 @@ const Contact: React.FC = () => {
                       I agree to the <a href="#" className="text-yellow-600 hover:underline">Privacy Policy</a>
                     </label>
                   </div>
-                  {errors.privacy && <p className="mt-1 text-sm text-red-600">{errors.privacy.message}</p>}
-                  
+                  {errors.privacy && <p className="mt-1 text-sm text-red-600">{String(errors.privacy.message)}</p>}
+
                   <button
                     type="submit"
                     className="w-full bg-black hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-md shadow transition-all duration-300 flex items-center justify-center"
@@ -214,7 +214,7 @@ const Contact: React.FC = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Map Section */}
         <div className="mt-12 bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="aspect-w-16 aspect-h-9 w-full h-80 bg-gray-300">
@@ -228,11 +228,11 @@ const Contact: React.FC = () => {
             </div>
           </div>
         </div>
-        
+
         {/* FAQ Section */}
         <div className="mt-16">
           <h2 className="text-3xl font-bold mb-10 text-center text-gray-800">Frequently Asked Questions</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3 text-gray-800">What services do you offer?</h3>
@@ -240,21 +240,21 @@ const Contact: React.FC = () => {
                 We offer a wide range of services including web design, development, branding, and digital marketing solutions tailored to your specific needs.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3 text-gray-800">How quickly can you respond to my inquiry?</h3>
               <p className="text-gray-600">
                 We typically respond to all inquiries within 24 hours during business days. For urgent matters, please call our office directly.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3 text-gray-800">Do you offer free consultations?</h3>
               <p className="text-gray-600">
                 Yes, we offer a free 30-minute initial consultation to discuss your project needs and how we can help you achieve your goals.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3 text-gray-800">What is your typical project timeline?</h3>
               <p className="text-gray-600">
