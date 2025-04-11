@@ -6,6 +6,7 @@ import childImg from "../assets/impact-story/child.jpg";
 import personImg from "../assets/impact-story/person.jpg"
 import youthImg from "../assets/impact-story/youth.jpg"
 import ruralImg from "../assets/impact-story/rural.jpg"
+import img2 from "../assets/images/IMG_3998.JPG"
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -55,7 +56,7 @@ const Home: React.FC = () => {
       icon: <PawPrint className="h-12 w-12 mb-4 text-amber-600" />,
       description: "Providing veterinary services, training in animal care, and support for livestock-based livelihoods.",
       color: "bg-amber-50 border-amber-200",
-      iconBg: "bg-amber-100", 
+      iconBg: "bg-amber-100",
       hoverColor: "hover:bg-amber-100",
     },
     {
@@ -86,7 +87,7 @@ const Home: React.FC = () => {
       hoverColor: "hover:bg-red-100",
     },
   ];
-  
+
   const highlights = [
     {
       icon: "🎓",
@@ -119,7 +120,7 @@ const Home: React.FC = () => {
     },
     {
       title: "Youth",
-      image: youthImg, 
+      image: youthImg,
       count: "480203+",
       underlineColor: "bg-[#4CC5F1]",
     },
@@ -139,58 +140,58 @@ const Home: React.FC = () => {
 
   return (
     <div className="bg-gray-50">
-      {/* Hero Section */}
       <Hero />
       <section className="py-16 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-3">
-       Our Mission
-        </h2>
-        <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {highlights.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition-all"
-            >
-              <div className="text-5xl mb-4">{item.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                {item.title}
-              </h3>
-              <p className="text-gray-600 text-sm">{item.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <section className="py-16 bg-white text-center">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Impact</h2>
-        <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
-        <p className="text-gray-600 mb-12">
-          As on <strong>Feb 28, 2025</strong>, we have directly impacted <strong>17,53,222</strong> people.
-          We currently have operations in <strong>22 Indian states/union territories</strong>.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {impactData.map((item, index) => (
-            <div key={index}>
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-56 object-cover rounded-2xl mb-4"
-              />
-              <div className="text-lg font-semibold text-gray-800">{item.title}</div>
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+            Our Mission
+          </h2>
+          <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {highlights.map((item, index) => (
               <div
-                className={`w-14 h-1 mx-auto mt-1 mb-3 rounded-full ${item.underlineColor}`}
-              ></div>
-              <div className="text-3xl font-bold text-gray-900">{item.count}</div>
-            </div>
-          ))}
+                key={index}
+                className="bg-white shadow-lg rounded-2xl p-6 hover:shadow-xl transition-all"
+              >
+                <div className="text-5xl mb-4">{item.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section> 
+      </section>
+
+      <section className="py-16 bg-white text-center">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Impact</h2>
+          <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+          <p className="text-gray-600 mb-12">
+            As on <strong>Feb 28, 2025</strong>, we have directly impacted <strong>17,53,222</strong> people.
+            We currently have operations in <strong>22 Indian states/union territories</strong>.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            {impactData.map((item, index) => (
+              <div key={index}>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-56 object-cover rounded-2xl mb-4"
+                />
+                <div className="text-lg font-semibold text-gray-800">{item.title}</div>
+                <div
+                  className={`w-14 h-1 mx-auto mt-1 mb-3 rounded-full ${item.underlineColor}`}
+                ></div>
+                <div className="text-3xl font-bold text-gray-900">{item.count}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Our Work Areas */}
       <section className="py-16 px-6 bg-gray-100">
         <div className="container mx-auto">
@@ -204,8 +205,8 @@ const Home: React.FC = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {workAreas.map((area) => (
-              <div 
-                key={area.id} 
+              <div
+                key={area.id}
                 className={`${area.color} border p-6 rounded-lg ${area.hoverColor} transition-all duration-300 hover:shadow-lg text-center`}
               >
                 <div className={`${area.iconBg} w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4`}>
@@ -213,8 +214,8 @@ const Home: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{area.title}</h3>
                 <p className="text-gray-600 mb-4">{area.description}</p>
-                <Link 
-                  to={`/our-work/${area.title.toLowerCase().replace(/\s+/g, '-')}`} 
+                <Link
+                  to={`/our-work/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
                   className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
                 >
                   Learn more <ArrowRight className="ml-1 h-4 w-4" />
@@ -294,7 +295,7 @@ const Home: React.FC = () => {
                 </div>
               </div>
               <div className="hidden md:block relative">
-                <img src="/api/placeholder/800/600" alt="Volunteers working" className="absolute inset-0 w-full h-full object-cover" />
+                <img src={img2} alt="Volunteers working" className="absolute inset-0 w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -386,50 +387,50 @@ const Home: React.FC = () => {
       </section> */}
 
       {/* Newsletter Subscription */}
-      <section className="py-12 px-6 bg-yellow-600 text-black">
-  <div className="container mx-auto">
-    <div className="max-w-2xl mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-3">Stay Updated</h2>
-      <div className="w-24 h-1 bg-teal-500 mx-auto mb-4"></div>
-      <p className="mb-6 text-gray-900">
-        Subscribe to our newsletter for updates on projects and events
-      </p>
-      
-      <div className="bg-white p-6 rounded-lg shadow-md mb-4">
-        <form className="flex flex-col sm:flex-row gap-3">
-          <input 
-            type="email" 
-            placeholder="Your email address" 
-            className="px-4 py-2 rounded-md flex-grow text-gray-800 border border-gray-300 focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500" 
-            required
-          />
-          <button type="submit" className="bg-black hover:bg-gray-800 text-white font-medium py-2 px-6 rounded-md transition-colors duration-200">
-            Subscribe
-          </button>
-        </form>
-      </div>
-      
-      <div className="flex justify-center gap-6 mt-4">
-        <span className="flex items-center text-black text-sm">
-          <svg className="w-4 h-4 mr-1 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-          </svg>
-          Weekly Updates
-        </span>
-        <span className="flex items-center text-black text-sm">
-          <svg className="w-4 h-4 mr-1 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-          </svg>
-          Exclusive Content
-        </span>
-      </div>
-      
-      <p className="mt-3 text-xs text-gray-900">
-        We respect your privacy. Unsubscribe at any time.
-      </p>
-    </div>
-  </div>
-</section>
+      <section className="py-12 px-6 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+        <div className="container mx-auto">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-3">Stay Updated</h2>
+            <div className="w-24 h-1 bg-yellow-600 mx-auto mb-4"></div>
+            <p className="mb-6 text-gray-300">
+              Subscribe to our newsletter for updates on projects and events
+            </p>
+
+            <div className="bg-gray-700 p-6 rounded-lg shadow-lg mb-4">
+              <form className="flex flex-col sm:flex-row gap-3">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  className="px-4 py-2 rounded-md flex-grow text-gray-200 bg-gray-800 border border-gray-600 focus:outline-none focus:border-yellow-600 focus:ring-1 focus:ring-yellow-600"
+                  required
+                />
+                <button type="submit" className="bg-yellow-600 hover:bg-yellow-700 text-white font-medium py-2 px-6 rounded-md transition-all duration-200">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+
+            <div className="flex justify-center gap-6 mt-4">
+              <span className="flex items-center text-gray-300 text-sm">
+                <svg className="w-4 h-4 mr-1 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                Weekly Updates
+              </span>
+              <span className="flex items-center text-gray-300 text-sm">
+                <svg className="w-4 h-4 mr-1 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                Exclusive Content
+              </span>
+            </div>
+
+            <p className="mt-3 text-xs text-gray-400">
+              We respect your privacy. Unsubscribe at any time.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
