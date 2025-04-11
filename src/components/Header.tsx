@@ -71,22 +71,29 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu Toggle with animation */}
         <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-white focus:outline-none bg-gray-800/50 p-2 rounded-md transition-all duration-300 hover:bg-gray-700/70"
-          aria-label="Toggle menu"
-        >
-          <div className="w-6 h-6 relative">
-            <span className={`absolute h-0.5 w-full bg-white transform transition-all duration-300 ${
-              isMenuOpen ? "rotate-45 top-3" : "rotate-0 top-1"
-            }`}></span>
-            <span className={`absolute h-0.5 bg-white transform transition-all duration-300 ${
-              isMenuOpen ? "opacity-0 w-0" : "opacity-100 w-full top-3"
-            }`}></span>
-            <span className={`absolute h-0.5 w-full bg-white transform transition-all duration-300 ${
-              isMenuOpen ? "-rotate-45 top-3" : "rotate-0 top-5"
-            }`}></span>
-          </div>
-        </button>
+  onClick={() => setIsMenuOpen(!isMenuOpen)}
+  className="md:hidden text-white focus:outline-none bg-gray-800/50 p-2 rounded-md transition-all duration-300 hover:bg-gray-700/70"
+  aria-label="Toggle menu"
+>
+  <div className="w-6 h-6 relative flex items-center justify-center">
+    <span
+      className={`absolute h-0.5 w-full bg-white transform transition-all duration-300 ${
+        isMenuOpen ? "rotate-45 top-3" : "rotate-0 top-1"
+      }`}
+    ></span>
+    <span
+      className={`absolute h-0.5 w-full bg-white transform transition-all duration-300 ${
+        isMenuOpen ? "opacity-0 w-0" : "opacity-100 w-full top-3"
+      }`}
+    ></span>
+    <span
+      className={`absolute h-0.5 w-full bg-white transform transition-all duration-300 ${
+        isMenuOpen ? "-rotate-45 top-3" : "rotate-0 top-5"
+      }`}
+    ></span>
+  </div>
+</button>
+
 
         {/* Mobile Navigation with improved animation */}
         <div

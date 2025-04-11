@@ -106,6 +106,7 @@ const Home: React.FC = () => {
       description: "Nurturing mind, body, and soul for balanced development.",
     },
   ];
+  
   const impactData = [
     {
       title: "Children",
@@ -132,6 +133,7 @@ const Home: React.FC = () => {
       underlineColor: "bg-[#4CC5F1]",
     },
   ];
+
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
