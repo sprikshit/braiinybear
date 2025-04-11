@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { MapPin, Phone, Mail, Clock, Send, Check } from "lucide-react";
 
 const Contact: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
-  const onSubmit = (data:any) => {
+  const onSubmit = (data: any) => {
     console.log(data);
     // Here you would typically send the data to your backend
     setIsSubmitted(true);
@@ -217,17 +220,16 @@ const Contact: React.FC = () => {
 
         {/* Map Section */}
         <div className="mt-12 bg-white rounded-lg shadow-lg overflow-hidden">
-          <div className="aspect-w-16 aspect-h-9 w-full h-80 bg-gray-300">
-            {/* Replace with your actual map - For this example a placeholder image is used */}
-            <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-              <img
-                src="/api/placeholder/1600/900"
-                alt="Map location"
-                className="w-full h-full object-cover"
-              />
-            </div>
+          <div className="relative w-full h-80 sm:h-[500px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53575.75207559795!2d78.02122877045902!3d30.325073917930606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1744367721722!5m2!1sen!2sin"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute top-0 left-0 w-full h-full border-0"
+            ></iframe>
           </div>
         </div>
+
 
         {/* FAQ Section */}
         <div className="mt-16">

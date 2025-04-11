@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import bgImage from '../assets/images/IMG-20250319-WA0012.jpg'
 import {  Target, Award, Heart, Lightbulb } from 'lucide-react';
 
 
 const About: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const teamMembers = [
     {
       name: "Dr. Elena Rodriguez",

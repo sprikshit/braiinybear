@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from '../components/homepage/Hero';
 import { ArrowRight, BookOpen, Users, Lightbulb, Leaf, PawPrint, Sun, Heart, Activity } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -8,6 +8,9 @@ import youthImg from "../assets/impact-story/youth.jpg"
 import ruralImg from "../assets/impact-story/rural.jpg"
 
 const Home: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // Work areas with icons and descriptions
   const workAreas = [
     {
@@ -106,7 +109,7 @@ const Home: React.FC = () => {
       description: "Nurturing mind, body, and soul for balanced development.",
     },
   ];
-  
+
   const impactData = [
     {
       title: "Children",
