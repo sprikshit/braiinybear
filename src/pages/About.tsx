@@ -10,19 +10,19 @@ const About: React.FC = () => {
 
   const teamMembers = [
     {
-      name: "Dr. Elena Rodriguez",
-      role: "Founder & Executive Director",
-      bio: "A visionary educator with 20 years of experience in community development and educational innovation."
+      name: "Indu Negi",
+      role: "President",
+      bio: ""
     },
     {
-      name: "Michael Chen",
-      role: "Chief Program Officer",
-      bio: "An expert in curriculum design with a passion for creating transformative learning experiences."
+      name: "Rakshendu Vardhan",
+      role: "Secretary",
+      bio: ""
     },
     {
-      name: "Sarah Njeri",
-      role: "Community Engagement Director",
-      bio: "A dedicated professional committed to bridging educational gaps in underserved communities."
+      name: "Sanjay Goyal",
+      role: "Treasurer",
+      bio: ""
     }
   ]
 
@@ -107,21 +107,29 @@ const About: React.FC = () => {
           <div className="p-8 md:p-10 text-left w-full md:w-10/12">
             <h3 className="text-3xl font-semibold mb-6 text-yellow-700 border-b-2 border-yellow-200 pb-2">Our Purpose</h3>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Brainy Bear Educational and Training Society is dedicated to empowering individuals 
-              and communities through accessible, high-quality education and skill development 
-              programs. We believe in the transformative power of learning to create sustainable 
-              social change and unlock human potential.
+            Our mission is to serve as a beacon of hope, learning, and transformation. BraiinyBear is committed to:
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              We strive to create educational environments where creativity flourishes, critical thinking 
-              is nurtured, and every learner discovers their unique capabilities. Our programs are designed 
-              to bridge educational gaps and provide opportunities for personal and professional growth.
+            Educating minds and empowering lives—from children discovering their potential to senior citizens rediscovering their purpose.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Through partnerships with educational institutions, corporations, and community organizations, 
-              we extend our reach to underserved populations and areas with limited educational resources, 
-              ensuring that quality learning experiences are available to all.
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            Championing women’s empowerment, ensuring every woman has the tools, voice, and confidence to shape her future.
             </p>
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            Harnessing technology and innovation to solve real-world challenges, particularly in agriculture, animal husbandry, and rural livelihoods.
+              </p>
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            Caring for our environment, cultivating responsibility and awareness to protect our planet for future generations.
+            </p>
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            Standing firm against substance abuse, spreading awareness, compassion, and recovery resources to build a healthier society.
+            </p>
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            Creating inclusive spaces where no one is left behind, and where learning, dignity, and opportunity are rights—not privileges.
+            </p>
+            <h6 className="text-lg text-gray-900 leading-relaxed">
+            With each step, we walk hand-in-hand with communities, nurturing a better tomorrow—one that reflects the power of knowledge, the strength of unity, and the beauty of human potential.
+            </h6>
           </div>
         </div>
       </div>
@@ -135,22 +143,10 @@ const About: React.FC = () => {
           <div className="p-8 md:p-10 text-left w-full md:w-10/12">
             <h3 className="text-3xl font-semibold mb-6 text-yellow-700 border-b-2 border-yellow-200 pb-2">Our Aspiration</h3>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              To be a leading catalyst for educational excellence, bridging knowledge gaps 
-              and creating opportunities for lifelong learning across diverse communities. 
-              We strive to build a world where quality education is a fundamental right, 
-              not a privilege.
+            At BraiinyBear Educational Training and Society, we envision a world where knowledge becomes the bridge to empowerment, and compassion fuels change. A society where education uplifts every soul—young minds, seasoned elders, and curious hearts alike. Where innovation harmonizes with tradition, nurturing a future rooted in sustainability, dignity, and shared growth.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              By 2030, we envision Brainy Bear Society as an influential force in educational innovation, 
-              having transformed the learning journeys of over one million individuals worldwide. We aspire 
-              to establish educational hubs in underserved regions, providing state-of-the-art learning 
-              facilities and resources.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Our vision encompasses a future where education transcends traditional boundaries, embracing 
-              technological advancement while preserving human connection. We see a world where learning 
-              is personalized, engaging, and aligned with evolving global needs, preparing individuals 
-              not just for careers but for meaningful contributions to society.
+            We dream of communities where women rise with strength and pride, where the environment is not just protected but cherished, and where agriculture and animal care are embraced as noble, modern endeavors. A world free from the chains of addiction, where every individual has the opportunity to learn, grow, and thrive with purpose.
             </p>
           </div>
         </div>

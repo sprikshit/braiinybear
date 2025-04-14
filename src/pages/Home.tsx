@@ -387,7 +387,7 @@ const Home: React.FC = () => {
       </section> */}
 
       {/* Newsletter Subscription */}
-      <section className="py-12 px-6 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+      <section className="py-12 px-6 bg-gradient-to-r from-gray-500 to-gray-600 text-white">
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-3">Stay Updated</h2>
