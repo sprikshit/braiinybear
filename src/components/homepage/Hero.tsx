@@ -29,7 +29,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[500px] h-screen w-full flex items-center justify-center overflow-hidden mb-4 bg-black">
+    <section className="relative min-h-[500px] h-screen flex items-center justify-center overflow-hidden mb-4 bg-black">
       {/* Background Image Slider */}
       {images.map((image, index) => (
         <div
@@ -39,7 +39,7 @@ const Hero = () => {
           }`}
           style={{ backgroundImage: `url(${image})` }}
         >
-          <div className="absolute inset-0 bg-black/40"></div>
+          {/* <div className="absolute inset-0 bg-black/40"></div> */}
         </div>
       ))}
 

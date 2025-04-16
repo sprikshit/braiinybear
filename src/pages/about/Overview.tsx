@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import bgImage from '../assets/images/IMG-20250319-WA0012.jpg'
+import bgImage from '../../assets/images/IMG-20250319-WA0012.jpg'
 import {  Target, Award, Heart, Lightbulb } from 'lucide-react';
 
 
