@@ -31,7 +31,7 @@ const Header: React.FC = () => {
       ],
     },
     { name: "Our Work", path: "/our-work" },
-    { name: "Gallary", path: "/gallery" },
+    { name: "Gallery", path: "/gallery" },
     { name: "Contact", path: "/contact" },
   ];
 

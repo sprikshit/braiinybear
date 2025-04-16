@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import Overview from './pages/about/Overview'
 import OurPeople from './pages/about/OurPeople'
 import Contact from './pages/ContactUs'
-import Gallery from './pages/Gallary'
+import Gallery from './pages/Gallery'
 
 function App() {
 
