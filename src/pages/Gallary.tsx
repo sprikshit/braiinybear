@@ -3,7 +3,6 @@ import React from "react";
 // Import your images
 import img1 from "../assets/images/IMG_3992.JPG";
 import img2 from "../assets/images/IMG_3993.JPG";
-import img3 from "../assets/images/IMG_3994.jpg";
 import img4 from "../assets/images/IMG_3995.JPG";
 import img5 from "../assets/images/IMG_3997.JPG";
 import img6 from "../assets/images/IMG_3998.JPG";
@@ -20,7 +19,7 @@ import img17 from "../assets/images/IMG_4009.JPG";
 import img18 from "../assets/images/img.JPG";
 
 const images = [
-  img1, img2, img3, img4, img5, img6, img7, img8, img10,
+  img1, img2, img4, img5, img6, img7, img8, img10,
   img11, img12, img13, img14, img15, img16, img17, img18,
 ];
 
