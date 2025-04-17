@@ -5,12 +5,22 @@ import Overview from './pages/about/Overview'
 import OurPeople from './pages/about/OurPeople'
 import Contact from './pages/ContactUs'
 import Gallery from './pages/Gallery'
+import Education from './pages/work-areas/Education'
+import Environment from './pages/work-areas/Environment'
+import Agriculture from './pages/work-areas/Agriculture'
+import DrugRehabilitation from './pages/work-areas/DrugRehabilitation'
+import AnimalHusbandry from './pages/work-areas/AnimalHusbandry'
+import SeniorCitizen from './pages/work-areas/SeniorCitizen'
+import InnovationTechnology from './pages/work-areas/InnovationTechnology'
+import WomenEmpowerment from './pages/work-areas/WomenEmpowerment'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 
   return (
     <>
         <Router>
+        <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -19,6 +29,14 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/our-people" element={<OurPeople />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/environment" element={<Environment />} />
+          <Route path="/agriculture" element={<Agriculture />} />
+          <Route path="/drug-rehabilitation" element={<DrugRehabilitation />} />
+          <Route path="/animal-husbandry" element={<AnimalHusbandry />} />
+          <Route path="/senior-citizens" element={<SeniorCitizen />} />
+          <Route path="/innovation-and-technology" element={<InnovationTechnology />} />
+          <Route path="/women-empowerment" element={<WomenEmpowerment />} />
         </Routes>
       </Layout>
     </Router>

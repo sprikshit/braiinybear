@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import Hero from '../components/homepage/Hero';
 import { ArrowRight, BookOpen, Users, Lightbulb, Leaf, PawPrint, Sun, Heart, Activity } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -9,9 +8,6 @@ import ruralImg from "../assets/impact-story/rural.jpg"
 import img2 from "../assets/images/IMG_3998.JPG"
 
 const Home: React.FC = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   // Work areas with icons and descriptions
   const workAreas = [
     {
@@ -34,7 +30,7 @@ const Home: React.FC = () => {
     },
     {
       id: 3,
-      title: "Innovation & Technology",
+      title: "Innovation and Technology",
       icon: <Lightbulb className="h-12 w-12 mb-4 text-yellow-600" />,
       description: "Leveraging technology to solve social challenges and foster innovation in rural communities.",
       color: "bg-yellow-50 border-yellow-200",
@@ -215,7 +211,7 @@ const Home: React.FC = () => {
                 <h3 className="text-xl font-semibold mb-3">{area.title}</h3>
                 <p className="text-gray-600 mb-4">{area.description}</p>
                 <Link
-                  to={`/our-work/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
+                  to={`/${area.title.toLowerCase().replace(/\s+/g, '-')}`}
                   className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
                 >
                   Learn more <ArrowRight className="ml-1 h-4 w-4" />

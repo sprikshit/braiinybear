@@ -1,24 +1,4 @@
 
-// const teamMembers: TeamMember[] = [
-//   {
-//     id: 1,
-//     name: "Indu Negi",
-//     role: "President",
-//     about: "Alice brings over 15 years of leadership in tech, empowering teams to deliver innovation.",
-//   },
-//   {
-//     id: 2,
-//     name: "Rakshendu Vardhan",
-//     role: "Secretary",
-//     about: "Born on 10th August 1992, Rakshendu Vardhan is a graduate in Bachelor of Commerce (B.Com) and also holds a Diploma in Hotel Management with a specialization in Bartending. Beyond his academic qualifications, what truly defines Rakshendu is his unwavering passion for social service and community upliftment. From his school days, Rakshendu has actively participated in various volunteer programs, always driven by a genuine desire to make a difference. Over the years, this commitment grew stronger, leading him to work with multiple NGOs across India, contributing to diverse causes aimed at improving society. He, along with the BraiinyBear Educational Training and Society team, has been actively working for the \"Yamuna Bachao\" and \"Jaljeeva Mission\" for years—initiatives focused on environmental restoration and water conservation, showcasing his long-standing commitment to protecting natural resources and promoting sustainability. A humble and grounded individual, Rakshendu is known for his “out-of-the-box” thinking and his readiness to lend a helping hand, no matter the challenge. His journey reflects a blend of professional versatility and heartfelt dedication to social betterment—qualities that make him a valuable pillar of BraiinyBear Educational Training and Society.",
-//   },
-//   {
-//     id: 3,
-//     name: "Clara Smith",
-//     role: "Product Designer",
-//     about: "Clara crafts intuitive designs that delight users and solve real problems.",
-//   },
-// ];
 
 import { Linkedin, Mail, Twitter } from 'lucide-react';
 
