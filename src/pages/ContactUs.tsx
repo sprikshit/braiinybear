@@ -22,7 +22,10 @@ const Contact: React.FC = () => {
       );
   
       console.log('Email successfully sent:', result.text);
-      setIsSubmitted(true); // toggle success message
+      setTimeout(() => {
+        setIsSubmitted(false);
+        reset();
+      }, 3000); // toggle success message
     } catch (error) {
       console.error('Failed to send email:', error);
     }
