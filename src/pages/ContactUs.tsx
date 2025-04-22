@@ -1,19 +1,31 @@
 import React, {  useState } from "react";
 import { useForm } from "react-hook-form";
 import { MapPin, Phone, Mail, Clock, Send, Check } from "lucide-react";
+import emailjs from 'emailjs-com';
 
 const Contact: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
-  const onSubmit = (data: any) => {
-    console.log(data);
-    // Here you would typically send the data to your backend
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      reset();
-    }, 3000);
+  const onSubmit = async (data: any) => {
+    try {
+      const result = await emailjs.send(
+        'service_owkarxq',    // replace with your EmailJS service ID
+        'template_9pya1qr',   // replace with your EmailJS template ID
+        {
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+        },
+        'XAEG7Rq8HWeUfcwe7'     // replace with your EmailJS public key
+      );
+  
+      console.log('Email successfully sent:', result.text);
+      setIsSubmitted(true); // toggle success message
+    } catch (error) {
+      console.error('Failed to send email:', error);
+    }
   };
 
   return (

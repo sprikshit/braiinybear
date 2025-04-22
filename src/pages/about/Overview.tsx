@@ -1,26 +1,9 @@
 import bgImage from '../../assets/images/IMG-20250319-WA0012.jpg'
-import {  Target, Award, Heart, Lightbulb } from 'lucide-react';
+import { Target, Award, Heart, Lightbulb } from 'lucide-react';
 
 
 const About: React.FC = () => {
-
-  const teamMembers = [
-    {
-      name: "Indu Negi",
-      role: "President",
-      bio: ""
-    },
-    {
-      name: "Rakshendu Vardhan",
-      role: "Secretary",
-      bio: ""
-    },
-    {
-      name: "Sanjay Goyal",
-      role: "Treasurer",
-      bio: ""
-    }
-  ]
+ 
 
   const coreValues = [
     {
@@ -61,95 +44,95 @@ const About: React.FC = () => {
     <div className="space-y-12 mt-8">
       {/* Hero Banner */}
       <section
-  className="relative bg-cover bg-center bg-no-repeat py-24 px-6 mt-20"
-  style={{ backgroundImage: `url(${bgImage})` }}
->
-  {/* Gradient Overlay */}
-  <div className="absolute inset-0"></div>
+        className="relative bg-cover bg-center bg-no-repeat py-24 px-6 mt-20"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      >
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0"></div>
 
-  <div className="relative container mx-auto text-center text-white">
-    <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-white via-yellow-500 to-white text-transparent bg-clip-text animate-pulse">
-      About the Braiiny Bear Society
-    </h1>
-    <div className="w-32 h-1 bg-yellow-500 mx-auto mb-8"></div>
-    <p className="max-w-3xl mx-auto text-white text-xl mb-10 leading-relaxed">
-      Empowering minds, transforming communities through accessible education
-      and innovative learning experiences.
-    </p>
-    <div className="flex justify-center gap-4">
-      <button className="bg-white text-yellow-700 hover:bg-yellow-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
-        Discover Our Programs
-      </button>
-      <button className="bg-black text-yellow-400 hover:bg-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
-        Join Us
-      </button>
-    </div>
-  </div>
+        <div className="relative container mx-auto text-center text-white">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-white via-yellow-500 to-white text-transparent bg-clip-text animate-pulse">
+            About the Braiiny Bear Society
+          </h1>
+          <div className="w-32 h-1 bg-yellow-500 mx-auto mb-8"></div>
+          <p className="max-w-3xl mx-auto text-white text-xl mb-10 leading-relaxed">
+            Empowering minds, transforming communities through accessible education
+            and innovative learning experiences.
+          </p>
+          <div className="flex justify-center gap-4">
+            <button className="bg-white text-yellow-700 hover:bg-yellow-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+              Discover Our Programs
+            </button>
+            <button className="bg-black text-yellow-400 hover:bg-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+              Join Us
+            </button>
+          </div>
+        </div>
 
-  {/* Decorative Elements */}
- 
-</section>
+        {/* Decorative Elements */}
+
+      </section>
 
       {/* Mission and Vision Section */}
-  <section className="bg-gradient-to-b from-white-500 to-gray-600 text-center py-10">
-  <div className="container mx-auto px-4">    
-    <div className="max-w-7xl mx-auto space-y-10">
-      {/* Mission Section */}
-      <div className="bg-white rounded-xl shadow-xl overflow-hidden transform transition-all hover:scale-[1.01]">
-        <div className="flex flex-col md:flex-row">
-          <div className="bg-yellow-700 w-full md:w-2/12 p-6 flex items-center justify-center">
-            <span className="text-3xl text-white font-bold">Mission</span>
+      <section className="bg-gradient-to-b from-white-500 to-gray-600 text-center py-10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto space-y-10">
+            {/* Mission Section */}
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden transform transition-all hover:scale-[1.01]">
+              <div className="flex flex-col md:flex-row">
+                <div className="bg-yellow-700 w-full md:w-2/12 p-6 flex items-center justify-center">
+                  <span className="text-3xl text-white font-bold">Mission</span>
+                </div>
+                <div className="p-8 md:p-10 text-left w-full md:w-10/12">
+                  <h3 className="text-3xl font-semibold mb-6 text-yellow-700 border-b-2 border-yellow-200 pb-2">Our Purpose</h3>
+                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Our mission is to serve as a beacon of hope, learning, and transformation. BraiinyBear is committed to:
+                  </p>
+                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Educating minds and empowering lives—from children discovering their potential to senior citizens rediscovering their purpose.
+                  </p>
+                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Championing women’s empowerment, ensuring every woman has the tools, voice, and confidence to shape her future.
+                  </p>
+                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Harnessing technology and innovation to solve real-world challenges, particularly in agriculture, animal husbandry, and rural livelihoods.
+                  </p>
+                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Caring for our environment, cultivating responsibility and awareness to protect our planet for future generations.
+                  </p>
+                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Standing firm against substance abuse, spreading awareness, compassion, and recovery resources to build a healthier society.
+                  </p>
+                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Creating inclusive spaces where no one is left behind, and where learning, dignity, and opportunity are rights—not privileges.
+                  </p>
+                  <h6 className="text-lg text-gray-900 leading-relaxed">
+                    With each step, we walk hand-in-hand with communities, nurturing a better tomorrow—one that reflects the power of knowledge, the strength of unity, and the beauty of human potential.
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            {/* Vision Section */}
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden transform transition-all hover:scale-[1.01]">
+              <div className="flex flex-col md:flex-row">
+                <div className="bg-yellow-700 w-full md:w-2/12 p-6 flex items-center justify-center">
+                  <span className="text-3xl text-white font-bold">Vision</span>
+                </div>
+                <div className="p-8 md:p-10 text-left w-full md:w-10/12">
+                  <h3 className="text-3xl font-semibold mb-6 text-yellow-700 border-b-2 border-yellow-200 pb-2">Our Aspiration</h3>
+                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                    At BraiinyBear Educational Training and Society, we envision a world where knowledge becomes the bridge to empowerment, and compassion fuels change. A society where education uplifts every soul—young minds, seasoned elders, and curious hearts alike. Where innovation harmonizes with tradition, nurturing a future rooted in sustainability, dignity, and shared growth.
+                  </p>
+                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                    We dream of communities where women rise with strength and pride, where the environment is not just protected but cherished, and where agriculture and animal care are embraced as noble, modern endeavors. A world free from the chains of addiction, where every individual has the opportunity to learn, grow, and thrive with purpose.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="p-8 md:p-10 text-left w-full md:w-10/12">
-            <h3 className="text-3xl font-semibold mb-6 text-yellow-700 border-b-2 border-yellow-200 pb-2">Our Purpose</h3>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Our mission is to serve as a beacon of hope, learning, and transformation. BraiinyBear is committed to:
-            </p>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Educating minds and empowering lives—from children discovering their potential to senior citizens rediscovering their purpose.
-            </p>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Championing women’s empowerment, ensuring every woman has the tools, voice, and confidence to shape her future.
-            </p>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Harnessing technology and innovation to solve real-world challenges, particularly in agriculture, animal husbandry, and rural livelihoods.
-              </p>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Caring for our environment, cultivating responsibility and awareness to protect our planet for future generations.
-            </p>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Standing firm against substance abuse, spreading awareness, compassion, and recovery resources to build a healthier society.
-            </p>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Creating inclusive spaces where no one is left behind, and where learning, dignity, and opportunity are rights—not privileges.
-            </p>
-            <h6 className="text-lg text-gray-900 leading-relaxed">
-            With each step, we walk hand-in-hand with communities, nurturing a better tomorrow—one that reflects the power of knowledge, the strength of unity, and the beauty of human potential.
-            </h6>
-          </div>
-        </div>
-      </div>
-      
-      {/* Vision Section */}
-      <div className="bg-white rounded-xl shadow-xl overflow-hidden transform transition-all hover:scale-[1.01]">
-        <div className="flex flex-col md:flex-row">
-        <div className="bg-yellow-700 w-full md:w-2/12 p-6 flex items-center justify-center">
-                    <span className="text-3xl text-white font-bold">Vision</span>
-          </div>
-          <div className="p-8 md:p-10 text-left w-full md:w-10/12">
-            <h3 className="text-3xl font-semibold mb-6 text-yellow-700 border-b-2 border-yellow-200 pb-2">Our Aspiration</h3>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            At BraiinyBear Educational Training and Society, we envision a world where knowledge becomes the bridge to empowerment, and compassion fuels change. A society where education uplifts every soul—young minds, seasoned elders, and curious hearts alike. Where innovation harmonizes with tradition, nurturing a future rooted in sustainability, dignity, and shared growth.
-            </p>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            We dream of communities where women rise with strength and pride, where the environment is not just protected but cherished, and where agriculture and animal care are embraced as noble, modern endeavors. A world free from the chains of addiction, where every individual has the opportunity to learn, grow, and thrive with purpose.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    {/* Approach Section
+
+          {/* Approach Section
     <div className="max-w-5xl mx-auto mt-10">
       <div className="bg-black rounded-xl shadow-xl overflow-hidden">
         <div className="p-10">
@@ -174,34 +157,11 @@ const About: React.FC = () => {
         </div>
       </div>
     </div> */}
-  </div>
-</section>
-
-      {/* Team Section */}
-      <section className="text-center">
-        <h3 className="text-3xl font-bold mb-8 text-brainy-blue">Our Leadership Team</h3>
-        
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {teamMembers.map((member, index) => (
-            <div 
-              key={index} 
-              className="bg-white p-6 rounded-lg shadow-md transform transition-transform hover:scale-105"
-            >
-              {/* <img 
-                src={TeamPlaceholder} 
-                alt={member.name}
-                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-              /> */}
-              <h4 className="text-xl font-semibold text-brainy-blue">{member.name}</h4>
-              <p className="text-brainy-green font-medium mb-2">{member.role}</p>
-              <p className="text-gray-600">{member.bio}</p>
-            </div>
-          ))}
         </div>
       </section>
 
-  {/* Our Core Values */}
-  <section className="py-16 px-6 bg-gray-100">
+      {/* Our Core Values */}
+      <section className="py-16 px-6 bg-gray-100">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-3">Our Core Values</h2>
@@ -213,8 +173,8 @@ const About: React.FC = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {coreValues.map((value) => (
-              <div 
-                key={value.id} 
+              <div
+                key={value.id}
                 className={`${value.color} border p-6 rounded-lg transition-all duration-300 hover:shadow-lg text-center`}
               >
                 <div className={`${value.iconBg} w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4`}>
@@ -242,7 +202,7 @@ const About: React.FC = () => {
             <div className="relative">
               {/* Timeline */}
               <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-yellow-200"></div>
-              
+
               {/* Timeline items */}
               <div className="space-y-12">
                 {/* Item 1 */}
