@@ -2,14 +2,15 @@
 
 import { Linkedin, Mail, Twitter } from 'lucide-react';
 import raksh from '../../assets/images/Headshot-1.jpg'
-// Sample team data - replace with your actual team data
+import indu from '../../assets/images/indu.jpeg'
+
 const teamMembers = [
   {
     id: 1,
     name: "Indu Negi",
     role: "President",
     bio: "Meet Indu Negi, the passionate and visionary President of BrainyBear Educational Training and Society. After marriage, Indu continued her educational journey by completing ITI, shorthand training, and graduation, paving the way for a life dedicated to service and empowerment.She began her career as a Supervisor with Uttarakhand Seva Nidhi at the Balwadis in Almora, nurturing early childhood education at the grassroots level. Later, she worked as a Coordinator with Swayam Sewa in the Pokhar Block, focusing on the empowerment of women through Self-Help Groups (SHGs). Her efforts helped local women engage in organic farming activities, including mushroom cultivation and other income-generating projects.Indu has always believed in building self-reliant communities. She initiated skill development programs in areas such as toy making and beautician training, helping women gain financial independence.Her contributions extend into healthcare and wellness, where she has organized numerous health camps across Dehradun and other districts in Uttarakhand—often in collaboration with some of the top gynecologists in the state, addressing critical issues in women’s health. She is also deeply committed to child welfare, working to improve the lives of children in various regions of Uttarakhand through education, nutrition, and emotional support. In addition to her social and healthcare work, Indu has shown strong leadership in environmental and water conservation initiatives. She has actively organized programs under “Yamuna Bachao” for the betterment of nature, and led efforts for the Jal Jeevan Mission, focusing on water sustainability and awareness. Through her relentless dedication, Indu Negi has become a beacon of change—uplifting women, children, and communities while protecting the environment. Under her leadership, BrainyBear Educational Training and Society continues to create lasting impact across Uttarakhand.",
-    image: "/api/placeholder/400/400",
+    image: indu,
     socialLinks: {
       linkedin: "#",
       twitter: "#",
@@ -33,8 +34,8 @@ const teamMembers = [
 
 const OurPeople = () => {  
   return (
-<div className="pt-28 pb-24 px-4 md:px-8 bg-gradient-to-b from-blue-50 to-white min-h-screen mt-10 mx-auto">
-  <div className="max-w-6xl mx-auto">
+<div className="pt-28 pb-24 md:px-8 bg-gradient-to-b from-blue-50 to-white min-h-screen mt-10 mx-auto">
+  <div className="max-w-7xl mx-auto">
     {/* Header Section */}
     <div className="text-center mb-16">
       <h1 className="text-5xl font-extrabold text-gray-800 mb-4">
@@ -45,20 +46,19 @@ const OurPeople = () => {
         bringing passion and expertise to everything we do.
       </p>
     </div>
-
-    {/* Cards in Column with Left Image + Right Text */}
     {teamMembers.map((member) => (
       <div
         key={member.id}
-        className="flex flex-col md:flex-row bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 mt-10 mx-auto max-w-5xl"
+        className="flex flex-col md:flex-row bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 mt-10 mx-auto max-w-7xl"
       >
         {/* Left Image */}
         <div className="md:w-1/3 w-full h-64 md:h-auto relative">
-          <img
-            src={member.image}
-            alt={member.name}
-            className="w-full h-full object-cover object-center"
-          />
+        <img
+  src={member.image}
+  alt={member.name}
+  className="w-full h-full object-cover object-top"
+/>
+
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-50"></div>
         </div>
 

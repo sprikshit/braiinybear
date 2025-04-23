@@ -17,10 +17,13 @@ import img15 from "../assets/images/IMG_4007.JPG";
 import img16 from "../assets/images/IMG_4008.JPG";
 import img17 from "../assets/images/IMG_4009.JPG";
 import img18 from "../assets/images/img.JPG";
+import img19 from "../assets/images/IMG.jpeg"
+import img20 from "../assets/images/IMG02.jpeg"
+import img21 from "../assets/images/IMG01.jpeg"
 
 const images = [
   img1, img2, img4, img5, img6, img7, img8, img10,
-  img11, img12, img13, img14, img15, img16, img17, img18,
+  img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21
 ];
 
 const Gallery: React.FC = () => {
