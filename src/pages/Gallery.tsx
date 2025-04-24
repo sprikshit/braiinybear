@@ -8,6 +8,7 @@ import img5 from "../assets/images/IMG_3997.JPG";
 import img6 from "../assets/images/IMG_3998.JPG";
 import img7 from "../assets/images/IMG_3999.JPG";
 import img8 from "../assets/images/IMG_4001.JPG";
+import img9 from "../assets/images/IMG_3996.JPG";
 import img10 from "../assets/images/IMG_4002.JPG";
 import img11 from "../assets/images/IMG_4003.JPG";
 import img12 from "../assets/images/IMG_4004.JPG";
@@ -22,7 +23,7 @@ import img20 from "../assets/images/IMG02.jpeg"
 import img21 from "../assets/images/IMG01.jpeg"
 
 const images = [
-  img1, img2, img4, img5, img6, img7, img8, img10,
+  img1, img2, img4, img5, img6, img7, img8, img9, img10,
   img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21
 ];
 
