@@ -39,7 +39,7 @@ const OurPeople = () => {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-extrabold text-gray-800 mb-4">
-            Our <span className="text-yellow-500">People</span>
+            Our <span className="text-[var(--primary-main)]">People</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Meet the dedicated team members who are the heart of our organization,
@@ -91,7 +91,7 @@ const OurPeople = () => {
             We're always looking for talented individuals to join our growing team.
             Check out our open positions and become part of our story.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-300">
+          <button className="bg-blue-600 hover:bg-[var(--primary-main)] text-white font-medium py-3 px-8 rounded-lg transition-colors duration-300">
             View Open Positions
           </button>
         </div>

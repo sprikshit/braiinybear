@@ -4,7 +4,7 @@
 @import "tailwindcss";
 
 :root{
-    --primary-main: #FFD782;
+  --primary-main: #172554;
     --primary-light: hsl(62, 64%, 68%);
     --primary-dark: hsl(62, 64%, 44%);
   }
@@ -33,10 +33,7 @@
       @apply text-xl font-bold
     }
   
-    button{
-      @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-black font-semibold rounded-lg hover:bg-yellow-500
-    }
-  
+
     .icon{
       @apply text-2xl cursor-pointer 
     }

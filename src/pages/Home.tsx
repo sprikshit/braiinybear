@@ -31,11 +31,11 @@ const Home: React.FC = () => {
     {
       id: 3,
       title: "Innovation and Technology",
-      icon: <Lightbulb className="h-12 w-12 mb-4 text-yellow-600" />,
+      icon: <Lightbulb className="h-12 w-12 mb-4 text-[var(--primary-main)]" />,
       description: "Leveraging technology to solve social challenges and foster innovation in rural communities.",
-      color: "bg-yellow-50 border-yellow-200",
-      iconBg: "bg-yellow-100",
-      hoverColor: "hover:bg-yellow-100",
+      color: "bg-blue-50 border-blue-200",
+      iconBg: "bg-blue-100",
+      hoverColor: "hover:bg-blue-100",
     },
     {
       id: 4,
@@ -137,12 +137,15 @@ const Home: React.FC = () => {
   return (
     <div className="bg-gray-50">
       <Hero />
+
+      {/* Our Mission */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-3">
             Our Mission
           </h2>
-          <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary-main)] to-blue-500 mx-auto mb-6 rounded-full"></div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {highlights.map((item, index) => (
               <div
@@ -160,10 +163,11 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Our Impact */}
       <section className="py-16 bg-white text-center">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Impact</h2>
-          <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary-main)] to-blue-500 mx-auto mb-6 rounded-full"></div>
           <p className="text-gray-600 mb-12">
             As on <strong>Feb 28, 2025</strong>, we have directly impacted <strong>17,53,222</strong> people.
             We currently have operations in <strong>22 Indian states/union territories</strong>.
@@ -189,11 +193,11 @@ const Home: React.FC = () => {
       </section>
 
       {/* Our Work Areas */}
-      <section className="py-16 px-6 bg-gray-100">
+      <section className="py-10 px-6 bg-gray-100">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-3">Our Work Areas</h2>
-            <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary-main)] to-blue-500 mx-auto mb-6 rounded-full"></div>
             <p className="max-w-2xl mx-auto text-gray-600">
               We take a holistic approach to community development through these key focus areas
             </p>
@@ -227,7 +231,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-3">Success Stories</h2>
-            <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary-main)] to-blue-500 mx-auto mb-6 rounded-full"></div>
             <p className="max-w-2xl mx-auto text-gray-600">
               Real stories of transformation and hope from our beneficiaries
             </p>
@@ -274,7 +278,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Volunteer/Donate CTA */}
-      <section className="py-16 px-6 bg-yellow-50">
+      <section className="py-16 px-6 bg-blue-50">
         <div className="container mx-auto">
           <div className="bg-white rounded-lg shadow-xl overflow-hidden">
             <div className="grid md:grid-cols-2">
@@ -282,10 +286,10 @@ const Home: React.FC = () => {
                 <h2 className="text-3xl font-bold mb-6">Join Our Mission</h2>
                 <p className="text-gray-600 mb-8">Your support can make a significant difference in the lives of those we serve. Join us as a volunteer or consider making a donation to support our programs.</p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link to="/volunteer" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md text-center transition-colors duration-300">
+                  <Link to="/volunteer" className="bg-blue-600 hover:bg-[var(--primary-main)] text-white font-bold py-3 px-6 rounded-md text-center transition-colors duration-300">
                     Volunteer With Us
                   </Link>
-                  <Link to="/donate" className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-md text-center transition-colors duration-300">
+                  <Link to="/donate" className="bg-[var(--primary-main)] hover:bg-[var(--primary-main)] text-white font-bold py-3 px-6 rounded-md text-center transition-colors duration-300">
                     Donate Now
                   </Link>
                 </div>
@@ -303,7 +307,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-3">Upcoming Events</h2>
-            <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary-main)] to-blue-500 mx-auto mb-6 rounded-full"></div>
             <p className="max-w-2xl mx-auto text-gray-600">
               Join us at our upcoming events and be part of the change
             </p>
@@ -366,7 +370,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-3">Our Partners & Supporters</h2>
-            <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary-main)] to-blue-500 mx-auto mb-6 rounded-full"></div>
             <p className="max-w-2xl mx-auto text-gray-600">
               We're grateful to work with organizations that share our vision
             </p>
@@ -383,45 +387,51 @@ const Home: React.FC = () => {
       </section> */}
 
       {/* Newsletter Subscription */}
-      <section className="py-12 px-6 bg-gradient-to-r from-gray-500 to-gray-600 text-white">
+      <section className="py-12 px-6 bg-gradient-to-r from-gray-800 to-gray-900 text-white">
         <div className="container mx-auto">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-3">Stay Updated</h2>
-            <div className="w-24 h-1 bg-yellow-600 mx-auto mb-4"></div>
-            <p className="mb-6 text-gray-300">
+
+            {/* Stylish underline */}
+            <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary-main)] to-blue-400 mx-auto mb-6 rounded-full"></div>
+
+            <p className="mb-6 text-gray-400">
               Subscribe to our newsletter for updates on projects and events
             </p>
 
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg mb-4">
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg mb-4 border border-gray-700">
               <form className="flex flex-col sm:flex-row gap-3">
                 <input
                   type="email"
                   placeholder="Your email address"
-                  className="px-4 py-2 rounded-md flex-grow text-gray-200 bg-gray-800 border border-gray-600 focus:outline-none focus:border-yellow-600 focus:ring-1 focus:ring-yellow-600"
+                  className="px-4 py-2 rounded-md flex-grow text-white bg-gray-900 border border-gray-700 focus:outline-none focus:border-[var(--primary-main)] focus:ring-1 focus:ring-[var(--primary-main)]"
                   required
                 />
-                <button type="submit" className="bg-yellow-600 hover:bg-yellow-700 text-white font-medium py-2 px-6 rounded-md transition-all duration-200">
+                <button
+                  type="submit"
+                  className="bg-[var(--primary-main)] hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-md transition-all duration-200"
+                >
                   Subscribe
                 </button>
               </form>
             </div>
 
             <div className="flex justify-center gap-6 mt-4">
-              <span className="flex items-center text-gray-300 text-sm">
-                <svg className="w-4 h-4 mr-1 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+              <span className="flex items-center text-gray-400 text-sm">
+                <svg className="w-4 h-4 mr-1 text-[var(--primary-main)]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 Weekly Updates
               </span>
-              <span className="flex items-center text-gray-300 text-sm">
-                <svg className="w-4 h-4 mr-1 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+              <span className="flex items-center text-gray-400 text-sm">
+                <svg className="w-4 h-4 mr-1 text-[var(--primary-main)]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 Exclusive Content
               </span>
             </div>
 
-            <p className="mt-3 text-xs text-gray-400">
+            <p className="mt-3 text-xs text-gray-500">
               We respect your privacy. Unsubscribe at any time.
             </p>
           </div>

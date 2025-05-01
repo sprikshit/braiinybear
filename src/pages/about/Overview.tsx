@@ -25,10 +25,10 @@ const About: React.FC = () => {
     {
       id: 3,
       title: "Innovation",
-      icon: <Lightbulb className="h-10 w-10 mb-4 text-yellow-600" />,
+      icon: <Lightbulb className="h-10 w-10 mb-4 text-[var(--primary-main)]" />,
       description: "We constantly seek creative solutions to address complex social challenges and improve our impact.",
-      color: "bg-yellow-50 border-yellow-200",
-      iconBg: "bg-yellow-100",
+      color: "bg-blue-50 border-blue-200",
+      iconBg: "bg-blue-100",
     },
     {
       id: 4,
@@ -41,36 +41,33 @@ const About: React.FC = () => {
   ];
 
   return (
-    <div className="space-y-12 mt-8">
+    <div className="">
       {/* Hero Banner */}
       <section
-        className="relative bg-cover bg-center bg-no-repeat py-24 px-6 mt-20"
+        className="relative bg-cover bg-center bg-no-repeat py-24 px-6"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         {/* Gradient Overlay */}
         <div className="absolute inset-0"></div>
 
         <div className="relative container mx-auto text-center text-white">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-white via-yellow-500 to-white text-transparent bg-clip-text animate-pulse">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-white via-[var(--primary-main)] to-white text-transparent bg-clip-text animate-pulse">
             About the Braiiny Bear Society
           </h1>
-          <div className="w-32 h-1 bg-yellow-500 mx-auto mb-8"></div>
+          <div className="w-32 h-1 bg-[var(--primary-main)] mx-auto mb-8"></div>
           <p className="max-w-3xl mx-auto text-white text-xl mb-10 leading-relaxed">
             Empowering minds, transforming communities through accessible education
             and innovative learning experiences.
           </p>
           <div className="flex justify-center gap-4">
-            <button className="bg-white text-yellow-700 hover:bg-yellow-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+            <button className="bg-white text-[var(--primary-main)] hover:bg-blue-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
               Discover Our Programs
             </button>
-            <button className="bg-black text-yellow-400 hover:bg-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+            <button className="bg-black text-blue-400 hover:bg-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
               Join Us
             </button>
           </div>
         </div>
-
-        {/* Decorative Elements */}
-
       </section>
 
       {/* Mission and Vision Section */}
@@ -80,11 +77,11 @@ const About: React.FC = () => {
             {/* Mission Section */}
             <div className="bg-white rounded-xl shadow-xl overflow-hidden transform transition-all hover:scale-[1.01]">
               <div className="flex flex-col md:flex-row">
-                <div className="bg-yellow-700 w-full md:w-2/12 p-6 flex items-center justify-center">
+                <div className="bg-[var(--primary-main)] w-full md:w-2/12 p-6 flex items-center justify-center">
                   <span className="text-3xl text-white font-bold">Mission</span>
                 </div>
                 <div className="p-8 md:p-10 text-left w-full md:w-10/12">
-                  <h3 className="text-3xl font-semibold mb-6 text-yellow-700 border-b-2 border-yellow-200 pb-2">Our Purpose</h3>
+                  <h3 className="text-3xl font-semibold mb-6 text-[var(--primary-main)] border-b-2 border-blue-200 pb-2">Our Purpose</h3>
                   <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                     Our mission is to serve as a beacon of hope, learning, and transformation. BraiinyBear is committed to:
                   </p>
@@ -116,11 +113,11 @@ const About: React.FC = () => {
             {/* Vision Section */}
             <div className="bg-white rounded-xl shadow-xl overflow-hidden transform transition-all hover:scale-[1.01]">
               <div className="flex flex-col md:flex-row">
-                <div className="bg-yellow-700 w-full md:w-2/12 p-6 flex items-center justify-center">
+                <div className="bg-[var(--primary-main)] w-full md:w-2/12 p-6 flex items-center justify-center">
                   <span className="text-3xl text-white font-bold">Vision</span>
                 </div>
                 <div className="p-8 md:p-10 text-left w-full md:w-10/12">
-                  <h3 className="text-3xl font-semibold mb-6 text-yellow-700 border-b-2 border-yellow-200 pb-2">Our Aspiration</h3>
+                  <h3 className="text-3xl font-semibold mb-6 text-[var(--primary-main)] border-b-2 border-blue-200 pb-2">Our Aspiration</h3>
                   <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                     At BraiinyBear Educational Training and Society, we envision a world where knowledge becomes the bridge to empowerment, and compassion fuels change. A society where education uplifts every soul—young minds, seasoned elders, and curious hearts alike. Where innovation harmonizes with tradition, nurturing a future rooted in sustainability, dignity, and shared growth.
                   </p>
@@ -136,21 +133,21 @@ const About: React.FC = () => {
     <div className="max-w-5xl mx-auto mt-10">
       <div className="bg-black rounded-xl shadow-xl overflow-hidden">
         <div className="p-10">
-          <h3 className="text-3xl font-semibold mb-6 text-yellow-400">Our Approach</h3>
+          <h3 className="text-3xl font-semibold mb-6 text-blue-400">Our Approach</h3>
           <p className="text-lg mb-8 text-white">
             At Brainy Bear Society, we combine traditional wisdom with cutting-edge educational practices to create meaningful learning journeys. Our programs are:
           </p>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-yellow-900 p-6 rounded-lg shadow-md transform transition-all hover:-translate-y-1">
-              <h4 className="font-bold text-xl mb-3 text-yellow-300">Learner-Centered</h4>
+            <div className="bg-blue-900 p-6 rounded-lg shadow-md transform transition-all hover:-translate-y-1">
+              <h4 className="font-bold text-xl mb-3 text-blue-300">Learner-Centered</h4>
               <p className="text-gray-200">Tailored to individual needs and learning styles, ensuring that each person's unique journey is supported and valued.</p>
             </div>
-            <div className="bg-yellow-900 p-6 rounded-lg shadow-md transform transition-all hover:-translate-y-1">
-              <h4 className="font-bold text-xl mb-3 text-yellow-300">Community-Driven</h4>
+            <div className="bg-blue-900 p-6 rounded-lg shadow-md transform transition-all hover:-translate-y-1">
+              <h4 className="font-bold text-xl mb-3 text-blue-300">Community-Driven</h4>
               <p className="text-gray-200">Developed with and for the communities we serve, addressing real-world challenges and cultural contexts.</p>
             </div>
-            <div className="bg-yellow-900 p-6 rounded-lg shadow-md transform transition-all hover:-translate-y-1">
-              <h4 className="font-bold text-xl mb-3 text-yellow-300">Results-Oriented</h4>
+            <div className="bg-blue-900 p-6 rounded-lg shadow-md transform transition-all hover:-translate-y-1">
+              <h4 className="font-bold text-xl mb-3 text-blue-300">Results-Oriented</h4>
               <p className="text-gray-200">Focused on practical skills and measurable outcomes that translate into tangible benefits for learners and communities.</p>
             </div>
           </div>
@@ -165,7 +162,7 @@ const About: React.FC = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-3">Our Core Values</h2>
-            <div className="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+  <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary-main)] to-blue-500 mx-auto mb-6 rounded-full"></div>
             <p className="max-w-2xl mx-auto text-gray-600">
               These principles guide our work and shape our approach to creating sustainable change
             </p>
@@ -192,7 +189,7 @@ const About: React.FC = () => {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-3">Our Journey</h2>
-            <div className="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+  <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary-main)] to-blue-500 mx-auto mb-6 rounded-full"></div>
             <p className="max-w-2xl mx-auto text-gray-600">
               From humble beginnings to impactful change - the story of our foundation
             </p>
@@ -201,7 +198,7 @@ const About: React.FC = () => {
           <div className="bg-white p-8 rounded-lg shadow-md">
             <div className="relative">
               {/* Timeline */}
-              <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-yellow-200"></div>
+              <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200"></div>
 
               {/* Timeline items */}
               <div className="space-y-12">
@@ -209,7 +206,7 @@ const About: React.FC = () => {
                 <div className="relative">
                   <div className="md:grid md:grid-cols-2 gap-8 items-center">
                     <div className="md:text-right pb-8 md:pb-0">
-                      <div className="bg-yellow-100 inline-block px-3 py-1 rounded-full text-yellow-800 font-medium mb-2">2010</div>
+                      <div className="bg-blue-100 inline-block px-3 py-1 rounded-full text-blue-800 font-medium mb-2">2010</div>
                       <h3 className="text-xl font-bold mb-2">Foundation Established</h3>
                       <p className="text-gray-600">Started with a small team of 5 volunteers focused on educational support in one rural community.</p>
                     </div>
@@ -217,14 +214,14 @@ const About: React.FC = () => {
                       <img src="/api/placeholder/400/220" alt="Foundation established" className="rounded-lg shadow-md" />
                     </div>
                   </div>
-                  <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-yellow-600 border-4 border-white"></div>
+                  <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-[var(--primary-main)] border-4 border-white"></div>
                 </div>
 
                 {/* Item 2 */}
                 <div className="relative">
                   <div className="md:grid md:grid-cols-2 gap-8 items-center">
                     <div className="md:order-last md:text-left pb-8 md:pb-0">
-                      <div className="bg-yellow-100 inline-block px-3 py-1 rounded-full text-yellow-800 font-medium mb-2">2015</div>
+                      <div className="bg-blue-100 inline-block px-3 py-1 rounded-full text-blue-800 font-medium mb-2">2015</div>
                       <h3 className="text-xl font-bold mb-2">Expansion of Programs</h3>
                       <p className="text-gray-600">Added six new focus areas including women empowerment and environmental conservation, reaching 20,000 beneficiaries.</p>
                     </div>
@@ -232,14 +229,14 @@ const About: React.FC = () => {
                       <img src="/api/placeholder/400/220" alt="Program expansion" className="rounded-lg shadow-md" />
                     </div>
                   </div>
-                  <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-yellow-600 border-4 border-white"></div>
+                  <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-[var(--primary-main)] border-4 border-white"></div>
                 </div>
 
                 {/* Item 3 */}
                 <div className="relative">
                   <div className="md:grid md:grid-cols-2 gap-8 items-center">
                     <div className="md:text-right pb-8 md:pb-0">
-                      <div className="bg-yellow-100 inline-block px-3 py-1 rounded-full text-yellow-800 font-medium mb-2">2020</div>
+                      <div className="bg-blue-100 inline-block px-3 py-1 rounded-full text-blue-800 font-medium mb-2">2020</div>
                       <h3 className="text-xl font-bold mb-2">Technology Initiative</h3>
                       <p className="text-gray-600">Launched digital literacy programs and technology hubs in 30 communities, bridging the digital divide.</p>
                     </div>
@@ -247,14 +244,14 @@ const About: React.FC = () => {
                       <img src="/api/placeholder/400/220" alt="Technology initiative" className="rounded-lg shadow-md" />
                     </div>
                   </div>
-                  <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-yellow-600 border-4 border-white"></div>
+                  <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-[var(--primary-main)] border-4 border-white"></div>
                 </div>
 
                 {/* Item 4 */}
                 <div className="relative">
                   <div className="md:grid md:grid-cols-2 gap-8 items-center">
                     <div className="md:order-last md:text-left">
-                      <div className="bg-yellow-100 inline-block px-3 py-1 rounded-full text-yellow-800 font-medium mb-2">Today</div>
+                      <div className="bg-blue-100 inline-block px-3 py-1 rounded-full text-blue-800 font-medium mb-2">Today</div>
                       <h3 className="text-xl font-bold mb-2">National Recognition</h3>
                       <p className="text-gray-600">Operating in over 120 communities with 50,000+ lives impacted through our holistic development approach.</p>
                     </div>
@@ -262,7 +259,7 @@ const About: React.FC = () => {
                       <img src="/api/placeholder/400/220" alt="National recognition" className="rounded-lg shadow-md" />
                     </div>
                   </div>
-                  <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-yellow-600 border-4 border-white"></div>
+                  <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-[var(--primary-main)] border-4 border-white"></div>
                 </div>
               </div>
             </div>

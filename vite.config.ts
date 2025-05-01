@@ -8,5 +8,9 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  assetsInclude: ['**/*.JPG', '**/*.JPEG', '**/*.jpg']
+  assetsInclude: ['**/*.JPG', '**/*.JPEG', '**/*.jpg'],
+  server: {
+    host: '0.0.0.0', // or use your IP like '192.168.1.100'
+    port: 5173
+  }
 });

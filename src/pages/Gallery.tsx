@@ -1,6 +1,5 @@
 import React from "react";
 
-// Import your images
 import img1 from "../assets/images/IMG_3992.JPG";
 import img2 from "../assets/images/IMG_3993.JPG";
 import img3 from "../assets/images/IMG_3994.JPG"
@@ -32,7 +31,7 @@ const Gallery: React.FC = () => {
   return (
     <section className="pt-28 pb-16 px-4 sm:px-10 bg-gradient-to-br from-gray-50 to-white min-h-screen">
       <h1 className="text-5xl font-extrabold text-center text-gray-800 mb-4">
-        Our <span className="text-yellow-500">Gallery</span>
+        Our <span className="text-[var(--primary-main)]">Gallery</span>
       </h1>
       <p className="text-center text-lg text-gray-500 mb-12 max-w-3xl mx-auto">
         Explore the moments captured during our events, activities, and training sessions.
